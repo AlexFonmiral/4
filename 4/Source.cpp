@@ -49,7 +49,7 @@ int main()
 	//	cout << v[500][2];
 	ofstream f2;//файл с выходными данными - с логином и паролем для каждого человека
 	string fm="", im="", ot="", s="", pass="";
-	f2.open("scientist_password.txt");
+	f2.open("scientist_password.csv");
 	f2 << "ScientistName" << ',' << "preparation" << ',' << "date" << ',' << "components" <<',' <<"login" <<',' <<"password" << '\n';
 	for (int i = 1; i <= 500; i++) {
 	//Ланчеков Алексей Тимофеевич
@@ -63,5 +63,5 @@ int main()
 		f2<< v[i][2] << ',' << v[i][1] << ',' << v[i][0] << ',' << v[i][3] << ','<<s<<','<<pass<<'\n';
 
 	}
-	cout << "файл scientist_password.txt в корне проекта";
+	cout << "файл scientist_password.csv в корне проекта";
 }
